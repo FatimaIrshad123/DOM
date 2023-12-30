@@ -1,0 +1,12 @@
+ .employdata {
+    display: flex;
+ }
+ .formdata {
+    display: inline-block;
+ }
+ .formdata input {
+    font-size: 20px;
+ }
+.formdata label {
+    font-size: 20px; padding-right: 15px;
+}
