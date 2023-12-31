@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./To do list.css" type="text/css">
+    
+</head>
+<body>
+    <div class="div1">
+    <h2>TO DO LIST</h2>
+    <input type="text" id="value" name="WORK TO DO">
+    <input type="submit" value="SUBMIT" onclick="enter()" class="btn">
+     
+</div>
+    <ul id="remove">
+        <li class="dele">Cooking  <input type="button" value="DELETE"  onclick="del(this)"><input  type="button" value="UPDATE" class="upd" onclick="update(this)"></li> 
+        <li class="dele">Sleeping <input type="button" value="DELETE"  onclick="del(this)"><input type="button" value="UPDATE" class="upd" onclick="update(this)"></li>
+        <li class="dele">Runing <input type="button" value="DELETE"  onclick="del(this)" ><input type="button" value="UPDATE" class="upd" onclick="update(this)"></li>
+      </ul>
+      
+
+      <script src="./to do list.js"></script>
+</body>
+</html>
