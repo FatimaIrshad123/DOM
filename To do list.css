@@ -1,0 +1,26 @@
+body{
+    background-color: lightgray; display: flex; flex-direction: column; align-items: center;
+}
+.div1 {
+    text-align: center; font-size: 36px; display: block; background-color: white; width: 80%;
+    position: relative; padding-bottom: 30px;
+}
+input{
+    font-size: 20px; 
+}
+
+.btn {
+    padding: 5px,0px; background-color: yellow;;
+}
+ul { padding-top: 30px; padding-bottom: 30px;padding-right: 30px;
+    background-color: white; width: 50%; padding-left: 15%; line-height: 1.8;
+}
+li{
+    font-size: 20px;
+}
+li input{ float: right; width: 150px; 
+    
+}
+.upd {
+    background-color: blue; margin-right: 5px;
+}
