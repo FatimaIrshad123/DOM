@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let timeout;
+       function debounce(){
+        clearTimeout(timeout)
+        timeout =  setTimeout(function(){
+            sum()
+        },2000)
+        
+       }
+       
+       function sum(){
+            var a  = document.getElementById('num1').value;
+            var b = document.getElementById('num2').value;
+        
+            let result = fetch('http://localhost:3000/?a=' + a + '&b=' + b).then(function(value){
+                //console.log(value)
+                value.text().then(function(ans){
+                    console.log(ans)
+                    document.getElementById('finalSum').innerHTML = `The sum of these numbers is ${ans}`
+        
+                })
+            })
+       }    
+            
+    </script>
+</head>
+<body>
+    <input oninput='debounce()' type="text" placeholder="First Number" id="num1">
+    <br><br>
+    <input oninput='debounce()' type="text" placeholder="Second Number" id="num2">
+    <br><br>
+    
+    <div id="finalSum">
+
+    </div>
+</body>
+</html>
