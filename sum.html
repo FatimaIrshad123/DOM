@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(){
+            let a  = document.getElementById('num1').value;
+            let b = document.getElementById('num2').value;
+            console.log(a);
+            console.log(b);
+            let sum = parseInt(a) + parseInt(b);
+            console.log(sum)
+            document.getElementById('finalSum').innerHTML = `The sum of these numbers is ${sum}`
+        }
+    </script>
+</head>
+<body>
+    <input onchange='sum()' type="text" placeholder="First Number" id="num1">
+    <br><br>
+    <input onchange='sum()' type="text" placeholder="Second Number" id="num2">
+    <br><br>
+    
+    <div id="finalSum">
+
+    </div>
+    
+</body>
+</html>
